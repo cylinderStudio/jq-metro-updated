@@ -1,0 +1,83 @@
+body[theme=light] { background: white; color: #000; }
+
+.theme-bg {background:#000;}
+body[theme=light] .theme-bg {background:#fff;}
+
+/*ui-pivot*/
+.ui-pivot .ui-pivot-headers { white-space: nowrap; height: 60px; display: block; clear: both; }
+.ui-pivot .ui-pivot-headers .ui-pivot-header { font-size: 250%; font-weight: normal; display: inline-block; vertical-align: top; padding: 0; cursor: pointer; margin: 0 5px; }
+.ui-pivot .ui-pivot-headers .ui-pivot-header.current { }
+.ui-pivot .ui-pivot-items { position: relative; }
+.ui-pivot .ui-pivot-items .ui-pivot-item { position:absolute; top:0; left:0; padding:10px; overflow-x:hidden; overflow-y:auto;}
+
+/*ui-panorama*/
+.ui-panorama .ui-panorama-item h2,
+.ui-panorama h1 {overflow:hidden; white-space:nowrap; }
+.ui-panorama .ui-panorama-items {position:relative;}
+.ui-panorama .ui-panorama-items .ui-panorama-item { position:absolute; top:0; left:0; padding:10px; overflow-x:hidden; overflow-y:auto;}
+
+/*ui-list-picker*/
+.ui-list-picker {display:inline-block; vertical-align:top; position:relative; text-align:left;}
+.ui-list-picker .ui-list-picker-select {}
+.ui-list-picker ul {padding:0; margin:0; overflow:hidden; width:200px; background:#fff; border:solid 2px;}
+.ui-theme-light .ui-list-picker ul { border-color:#000;}
+.ui-list-picker ul li { list-style:none; white-space:nowrap; padding:3px 5px; color:#000; }
+.ui-list-picker ul.closed {background:#ccc; border-color:#ccc;}
+.ui-list-picker ul.closed li { color:#000 !important;}
+
+/**/
+.ui-context-menu {position:absolute; border:solid 2px; padding:10px;text-align:left;}
+.ui-context-menu ul {padding:0; margin:0; overflow:hidden; width:200px;}
+.ui-context-menu ul li { list-style:none; white-space:nowrap; padding:3px 5px;}
+
+/*ui-progressbar*/
+.ui-progressbar {position:absolute; width:100%; top:50%; left:0;}
+.ui-progressbar .ui-progressbar-dot { width:5px; height:5px; margin-left:10px; position:absolute; left:0; top:0; display:none;}
+.ui-progressbar.ui-enabled .ui-progressbar-dot 
+{
+    display:block;
+    -webkit-animation-name: ui-progressbar-step1, ui-progressbar-step2, ui-progressbar-step3;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function:linear;
+    -moz-animation-name: ui-progressbar-step1, ui-progressbar-step2, ui-progressbar-step3;  
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function:linear;
+    -o-animation-name: ui-progressbar-step1, ui-progressbar-step2, ui-progressbar-step3;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function:linear;
+    animation-name: ui-progressbar-step1, ui-progressbar-step2, ui-progressbar-step3;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+@-webkit-keyframes ui-progressbar-step1{
+    15% {left: 40%;}
+}
+@-webkit-keyframes ui-progressbar-step2{
+    15% {left:40%;}
+    60% {left: 60%;}
+}
+@-webkit-keyframes ui-progressbar-step3{
+    15% {left:40%;}
+    60% {left: 60%;}
+    75% {left: 100%;}
+    100% {left:100%;}
+}
+
+ul.metro-list { padding: 0; }
+ul.metro-list li { display: block; margin: 10px 0; height: 20px; padding: 5px; overflow: hidden; border-left: solid 30px; list-style: none; }
+
+a.metro-button { display: inline-block; padding: 2px 10px; border: solid 2px white; color: white; text-decoration: none; margin: 10px 0; }
+.start-menu-item { float: left; height: 120px; width: 120px; position: relative; color: White; margin: 5px; overflow: hidden; }
+.start-menu-item label { position: absolute; margin: 5px; bottom: 0; left: 0; white-space: nowrap; }
+.side-menu-item { height: 20px; padding: 5px 15px; border-left: solid 30px; margin: 10px 0; }
+
+
+ul.metro-conversation { padding: 0 30px; }
+ul.metro-conversation li { margin: 10px 0; display: block; padding: 10px; line-height: 110%; margin-right: 20%; position: relative; }
+ul.metro-conversation li.alt { margin-right: 0; margin-left: 20%; }
+ul.metro-conversation li .list-diam { position: absolute; top: -15px; left: 20px; font-size: 40pt; font-family: Arial; }
+ul.metro-conversation li.alt .list-diam { left: auto; right: 20px; top: auto; bottom: -10px; }
+
+div.html { background: white; padding: 10px; margin-left: 30px; border: dotted 2px #aaa; }
+
+ul.metro-conversation li .question { color: #444; border-bottom: dashed 1px #444; margin-bottom: 5px; padding-bottom: 10px; }

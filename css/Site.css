@@ -1,0 +1,27 @@
+body { }
+form {margin:auto; overflow-x:hidden; position:relative;}
+
+.ui-panorama { }
+.ui-theme-light .ui-panorama { }
+p {text-align:justify;}
+.rightside {float:right;}
+
+.progress-bar-switch {float:right; margin-left:10px;}
+
+.website-banner {display:none; border-bottom:dotted 1px #fff; background:#ddd; padding:0 10px;}
+.website-banner a {display:inline-block; padding:3px;}
+.website-banner a img {width:32px;}
+
+
+/*popup-settings*/
+#popup-settings {padding:0 10pt; }
+#popup-settings label {width:70px; display:inline-block; padding:0 10px;}
+#popup-settings .button {text-align:right;}
+#popup-settings .button .ui-button {width:33%; display:inline-block;}
+
+
+/*mainPage*/
+#mainPage .form-elements {padding-bottom:100px;}
+#mainPage .form-elements .item {clear:both; margin:10px 0;}
+#mainPage .form-elements .item label {width:130px; float:left;}
+#mainPage .form-elements .item .input { margin-left:130px; text-align:right;}
